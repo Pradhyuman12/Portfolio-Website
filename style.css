@@ -1,0 +1,127 @@
+/* Reset & Base */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #f5f7fa;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background: linear-gradient(135deg, #222, #444);
+  color: #fff;
+  padding: 2rem;
+  text-align: center;
+}
+.header-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.profile-pic img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 3px solid #ff9800;
+  margin-bottom: 1rem;
+}
+.social-links a {
+  margin: 0 10px;
+  font-size: 1.3rem;
+  color: #ff9800;
+}
+.social-links a:hover { color: #fff; }
+
+/* Navigation */
+nav {
+  background: #444;
+  padding: 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+nav ul li { margin: 0 15px; }
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+nav ul li a:hover { color: #ff9800; }
+
+/* Sections */
+.container { max-width: 900px; margin: 2rem auto; padding: 0 20px; }
+h2 {
+  margin-bottom: 1rem;
+  color: #222;
+  border-bottom: 2px solid #ff9800;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+.card {
+  background: #fff;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
+/* Skills Grid */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 15px;
+}
+.skills-grid div {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+.skills-grid i {
+  font-size: 1.5rem;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background: #222;
+  color: #aaa;
+  padding: 1.5rem;
+  margin-top: 2rem;
+}
+
+/* Floating Resume Button */
+.floating-resume-btn {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  background: #ff9800;
+  color: #fff;
+  padding: 12px 18px;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: transform 0.3s ease, background 0.3s ease;
+  z-index: 2000;
+}
+
+.floating-resume-btn:hover {
+  transform: scale(1.05);
+  background: #e68900;
+}
